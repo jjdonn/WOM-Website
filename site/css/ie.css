@@ -1,0 +1,21 @@
+body { min-width: 1170px;}
+
+.btn,
+.btn-1,
+.btn-1 span,
+.img-ind,
+.img-ind-1,
+.h-top .inside,
+.wrapper,
+.s-btn,
+.img-circle { behavior:url(js/PIE.htc); position:relative;}
+.sf-menu > li> ul,
+.sf-menu li li ul { behavior:url(js/PIE.htc); }
+
+.slider .slider-text { top: 168px;}
+.slider .slider-text { padding: 20px 26px 28px 24px;}
+
+	.magnifier:hover img {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);}
+	#contact-form ._placeholder {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=99);}
+	#contact-form ._placeholder.focused {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);}
+	#toTop:hover {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);}

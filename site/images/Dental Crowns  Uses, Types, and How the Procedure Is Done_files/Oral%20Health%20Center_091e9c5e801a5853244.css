@@ -1,0 +1,45 @@
+/* CSS OVERRIDE FOR FUNDED POLL
+.poll .title_area {
+	background: url("../../../consumer_assets/site_images/modules/2009_funded/top-curve-rr-taller.gif") no-repeat scroll 0 0;
+}
+.poll h3 {
+	background: none;
+	float: left;	
+	padding: 10px 0 0 10px;
+}
+.poll h4 {
+        margin: 0 15px 0 10px;
+        padding: 12px 0 5px 0; 
+}
+.poll form {clear:both;}
+.poll .funded_area {
+    overflow: hidden;
+    padding: 10px 0 5px 0;
+	border-left: 0;
+	border-right: 0;
+}
+.poll .funded_area a {
+	float: left;
+	padding: 0 5px 0 10px;
+	width: 50px;
+}
+.poll .funded_area img {
+	float:left;
+}
+.poll button.poll_vote,
+.poll ul {
+        margin: 0 0 0 10px;
+}
+.poll a.results { left: 30px; } */
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+/* /webmd/PageBuilder_Assets/CSS/AdModule/Right Ad/Right Ad CSS_091e9c5e800181aa.css */
+
+/* =RIGHT COLUMN AD STYLES
+------------------------------------------------------- */
+#rightAd_rdr {
+ width: 308px;
+}
+.rightAd_top_fmt {
+ background: #f2f0e6 url("../../../consumer_assets/site_images/modules/ad_top.gif") no-repeat;
+ font-size: 1%;
+ height: 10px;
+ width: 308px;
+}
+.rightAd_BG_fmt {
+ background: #f2f0e6;
+ text-align: center;
+ width: 100% !important;
+}
+.rightAd_bottom_fmt {
+clear:both;
+margin-bottom:4px;
+ background: #f2f0e6 url("../../../consumer_assets/site_images/modules/ad_bottom.gif") no-repeat;
+ font-size: 1%;
+ height: 10px;
+ width: 308px;
+}
+#rightAd_Iframe {
+vertical-align:bottom;
+}
+
+
+
+
+/* /webmd/PageBuilder_Assets/CSS/AdModule/Remote Ad Drop/Remote Ad Drop_091e9c5e80d22ecf.css */
+
+#remoteAd_rdr{
+ clear:both;
+ }
+
+#remoteAd_rdr iframe{
+ position:relative;
+right:4px;
+ }
+ 
+#remoteAd_rdr .conta {
+ color:#737373; 
+ clear:both; 
+ display:none;
+ margin-bottom:0px;
+}
+
+
+
+
+/* /webmd/PageBuilder_Assets/CSS/AdModule/Ad Serving Center 1/Center Ad Serving _091e9c5e805c8837.css */
+
+.centerAd_c1_rdr {
+ clear: both;
+ margin: 0 auto 10px 0px;
+ _text-align: center;
+ width: 494px;
+}
+
+.centerAd_c1_rdr .centerAd_top_fmt {
+ padding-bottom: 2px;
+}
+.centerAd_c1_rdr .centerAd_bottom_fmt {
+ clear: both;
+ margin-top: 2px;
+}
+.centerAd_c1_rdr .centerAd_BG_fmt {
+ width: 494px;
+}
+
+.sponsorBox_links_fmt {
+	float:left;
+	width: 350px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

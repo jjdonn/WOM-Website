@@ -1,0 +1,82 @@
+.suckertreemenu {
+	width:100%;
+	height:100%;
+}
+.suckertreemenu ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.suckertreemenu > ul{
+	width:100%;
+	float:left;
+	clear: left;
+}
+.suckertreemenu > ul > li{
+	display:inline;
+	/*width:140px;*/
+	line-height: 25px;
+	/*height:25px;*/
+	padding-left:10px;
+	/*padding-top:5px;*/
+	float:left;
+	position: relative; /*To fix IE6 problem (not displaying)*/ 
+}
+.suckertreemenu > ul > li > a{
+	min-height:23px;
+	float: left;
+	/*padding-top:2px;*/
+	padding-left:10px; 
+	padding-right:20px;
+	/*margin: 0; */
+	position: relative; /*To fix IE6 problem (not displaying)*/
+	text-decoration: none;
+	white-space:nowrap;
+}
+/* Rules for dropdown menus */
+.suckertreemenu > ul > li > ul {
+	display: none;
+	z-index:9999999;
+	position: absolute;
+	list-style-type: none;
+	margin:0;
+	padding:0 10%;
+	min-width:100%;
+	left:0px;
+}
+.suckertreemenu > ul > li ul > li{
+	white-space:nowrap;
+	padding:2px 0;
+	float:left;
+	min-width:100%;
+	position:relative;
+}
+.suckertreemenu > ul > li > ul > li > ul {
+	display: none;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+.suckertreemenu > ul > li ul > li > a{
+	padding:0 12px;
+	min-width:82%;
+	float:left;
+}
+.overload {
+	position:absolute;
+	top:7px;
+	left:120px;
+	background:url(../images/arrv_white.gif) no-repeat; width:7px; height:7px;
+}
+.overload-horizontal {
+	float:left;
+	margin-top:7px;
+	margin-left:-10px;
+	background:url(../images/arrv_white.gif) no-repeat; width:7px; height:7px;
+}
+.overload-vertical {
+	float:right;
+	margin-top:7px;
+	margin-left:-10px;
+	background:url(../images/arr_white.gif) no-repeat; width:7px; height:7px;
+}

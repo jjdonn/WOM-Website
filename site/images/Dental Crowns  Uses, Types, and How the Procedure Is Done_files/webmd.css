@@ -1,0 +1,584 @@
+/* ========== Basic ========== */
+/* ===== Hidden Elements ===== */ 
+.measureup .pane, .measureup .start_over, .measureup .pagination, .measureup .pane .results .result .subsection {
+	display:none;
+}
+/* ===== Layout ===== */ 
+.measureup {
+	margin:0 0 15px 3px;
+	width:299px;
+}
+.measureup h4 {
+	background:url('../../../../consumer_assets/site_images/widgets/aminormal/measure_header.gif') 0 0 no-repeat;
+	height:82px;
+	margin:0;
+	padding:0;
+	width:302px;
+}
+.measureup > .bottom {
+	background:url('../../../../consumer_assets/site_images/widgets/aminormal/measure_bottom.gif') 0 100% no-repeat;
+	min-height:15px;
+	width:302px;
+}
+.measureup > .bottom p.disclaimer {
+	margin:0;
+	color:#666;
+	font-size:80%;
+	padding:8px 20px 17px;
+}
+.measureup > .bottom .start_over {
+	padding: 6px 0 12px 100px;
+}
+.measureup > .bottom .start_over a {
+	background:url('../../../../consumer_assets/site_images/widgets/aminormal/start_over_bg.jpg') top left no-repeat;
+	display:block;
+	height:21px;
+	padding:3px 0 0 35px;
+	text-decoration:none;
+	font-size:80%;
+	width:104px;
+}
+.measureup > .bottom .start_over p {
+	color:#666;
+	float:right;
+	font-size:90%;
+	margin:-20px 0 0;
+	padding:0 18px 0 0;
+}
+.measureup > .bottom .start_over p strong {
+	color:#3D82A3;
+	font-weight:normal;
+}
+.measureup form {
+	color:#333;
+	font-size:105%;
+	margin:10px 0 0 0;
+	padding:0;
+}
+.measureup form label  {
+	display:inline-block;
+	line-height:27px;
+}
+
+/* ========== Pane Styles ========== */
+.measureup .pane {
+	min-height:95px;
+}
+.measureup .pane h5 {
+	color:#427994;
+	font-size:105%;
+	font-weight:normal;
+	margin:0 28px 10px 0;
+	padding:0;
+}
+.measureup .pane .webmd-btn-xl {
+	background:url('../../../../consumer_assets/site_images/widgets/aminormal/large-orange-button.png') 0 0 no-repeat;
+	width: 205px;
+}
+/* ===== Question Pane Styles ===== */
+.measureup .question .content {
+	background:url('../../../../consumer_assets/site_images/widgets/aminormal/measure_content_top_bot.gif') 0 0 no-repeat;
+	min-height:81px;
+	padding:5px 15px 0px 20px;
+	position:relative;
+	width:272px;
+}
+.measureup .question .bottom {	
+	background:url('../../../../consumer_assets/site_images/widgets/aminormal/measure_content_top_bot.gif') 0 100% no-repeat;
+	height:10px;
+	min-height:10px;
+	width:302px;
+}
+/* Default first pane */
+.measureup .pane0 {	
+	display:block;
+}
+.measureup .pane0 form {
+	padding-bottom:10px;
+}
+.measureup .pane0 input {
+	font-size: 120%;
+	margin: 0 10px;
+	width: 40px;
+}
+.measureup .pane0 form label, .measureup .pane0 form input, .measureup .pane0 form button {
+	float:left;
+}
+/* Default newsletter pane */
+.measureup .nl .content {	
+	padding-top:4px;
+}
+.measureup .nl label {
+	color:#427994;
+	display:block;
+	float:none;
+	font-size:105%;
+	line-height:20px;
+}
+.measureup .nl label small {
+	font-size:90%;
+}
+.measureup .nl p {
+	color:#3D82A3;
+	font-size:105%;
+	margin:5px 11px 0 5px;
+	padding:0 30px 0 0;
+}
+.measureup .nl form {
+	padding-left:5px;
+	margin-top:9px;
+}
+.measureup .nl .name {
+	font-size:90%;
+	margin:0 6px 6px 0;
+	width:110px;
+}
+.measureup .nl .email {
+	float:none;
+	font-size:90%;
+	margin: 3px 0 0 0;
+	width:236px;
+}
+.measureup .nl .buttons {
+	text-align:center;
+	margin: 14px 0px 4px 0px;
+}
+.measureup .nl .buttons span {
+	background:url('../../../../consumer_assets/site_images/widgets/aminormal/normal_content_div.png') 50% 50% no-repeat;
+	color: #3D82A3;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 8px -8px;
+	width: 100%;
+}
+.measureup .nl button {
+	float:none;
+	margin-left:-8px;
+}
+.measureup #nl_continue {
+	margin:8px 0 0 87px;
+}
+.measureup #nl_bypass {
+	margin-left:-12px;
+	text-decoration:none;
+}
+
+/* ===== Answer Pane Styles ===== */
+.measureup .answer {
+	min-height:200px;
+	background:#fcfcfc url('../../../../consumer_assets/site_images/widgets/aminormal/measure_answer_top.gif') 0 0 no-repeat;
+	border:1px solid #dee4d4;
+	padding:10px 15px 5px 15px; 
+	width:270px;
+}
+.measureup .answer .content h5 {
+	border:none;
+	color:#7d963a;
+	font-size:160%;
+	margin-bottom:20px;
+}
+.measureup .answer .content p {
+	color:#000;
+	font-size:90%;
+	margin:8px 0;
+	padding:0;
+}
+.measureup .answer .bottom {
+	height:0;
+	background:none;
+}
+/* Level Graph */
+.measureup .answer .level_graphic_container {
+	margin-bottom: 15px;
+	position:relative;
+	text-align:center;
+	width:259px;
+}
+.measureup .answer .level_graphic_container .level_tip {
+	background:url('../../../../consumer_assets/site_images/widgets/aminormal/normal_level_tip.png') top left no-repeat;
+	position:absolute;
+	top:-17px;
+	left:0;
+	width:11px;
+	height:16px;
+}
+.measureup .answer .level_graphic {
+	background:#fff;
+	border:1px solid #d3d8bf;
+	border-radius:15px;
+}
+.measureup .answer .level_graphic .range {
+	margin:-1px -1px 0 -1px;
+}
+/* Three Sections */
+.measureup .answer .level_graphic .range div {
+	border:1px solid #d3d8bf;
+	background:url('../../../../consumer_assets/site_images/widgets/aminormal/graph_top.gif') no-repeat;
+	float:left;
+	font-size:80%;
+	font-weight:bold;
+	line-height:100%;
+	padding:4px 2px;
+	text-transform:uppercase;
+	width:81px;
+}
+.measureup .answer .level_graphic .range .first {
+	border-radius:15px 0 0 15px;
+	border-right:0px;
+}
+.measureup .answer .level_graphic .range .second {
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+}
+.measureup .answer .level_graphic .range .third {
+	border-left:0px;
+	border-radius:0 15px 15px 0;
+}
+.measureup .answer .level_graphic .range .green {
+	background-color:#f2fee4;
+	background-position:50% -1px;
+	color:#4a6f4a;
+}
+.measureup .answer .level_graphic .range .orange {
+	background-color:#ffe7c1;
+	background-position:50% 33%;
+	color:#905b08;
+}
+.measureup .answer .level_graphic .range .red {
+	background-color:#feece0;
+	background-position:50% 99%;
+	color:#863f00;
+}
+
+/* Rounded corners for IE */
+.browserIE_7 .measureup .answer .level_graphic .range, .browserIE_8 .measureup .answer .level_graphic .range {
+	margin:0;
+}
+.browserIE_7 .measureup .answer .level_graphic, .browserIE_8 .measureup .answer .level_graphic {
+	border:0px;
+	border-radius:0px;
+}
+.browserIE_7 .measureup .answer .level_graphic .range div, .browserIE_8 .measureup .answer .level_graphic .range div {
+	background-color:transparent;
+	border:0px;
+	border-radius:0px;
+	height:26px;
+	padding:6px 2px 0 2px;
+}
+.browserIE_7 .measureup .answer .level_graphic .range .second, .browserIE_8 .measureup .answer .level_graphic .range .second {
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+	width:83px;
+}
+.browserIE_7 .measureup .answer .level_graphic .range .first.green, .browserIE_8 .measureup .answer .level_graphic .range .first.green {
+	background-position:0 0;
+}
+.browserIE_7 .measureup .answer .level_graphic .range .first.orange, .browserIE_8 .measureup .answer .level_graphic .range .first.orange {
+	background-position:0 33%;
+}
+.browserIE_7 .measureup .answer .level_graphic .range .first.red, .browserIE_8 .measureup .answer .level_graphic .range .first.red {
+	background-position:0 100%;
+}
+.browserIE_7 .measureup .answer .level_graphic .range .second.green, .browserIE_8 .measureup .answer .level_graphic .range .second.green {
+	background-position:50% 0;
+}
+.browserIE_7 .measureup .answer .level_graphic .range .second.orange, .browserIE_8 .measureup .answer .level_graphic .range .second.orange {
+	background-position:50% 33%;
+}
+.browserIE_7 .measureup .answer .level_graphic .range .second.red, .browserIE_8 .measureup .answer .level_graphic .range .second.red {
+	background-position:50% 100%;
+}
+.browserIE_7 .measureup .answer .level_graphic .range .third.green, .browserIE_8 .measureup .answer .level_graphic .range .third.green {
+	background-position:100% 0;
+}
+.browserIE_7 .measureup .answer .level_graphic .range .third.orange, .browserIE_8 .measureup .answer .level_graphic .range .third.orange {
+	background-position:100% 33%;
+}
+.browserIE_7 .measureup .answer .level_graphic .range .third.red, .browserIE_8 .measureup .answer .level_graphic .range .third.red {
+	background-position:100% 100%;
+}
+.browserIE_7 .measureup .answer .level_graphic p, .browserIE_8 .measureup .answer .level_graphic p {
+	background:url('../../../../consumer_assets/site_images/widgets/aminormal/graph_btm.gif') 0 100% no-repeat;
+	margin:0;
+	padding:8px 0 5px;
+}
+/* End IE specific Styles */
+
+/* Four Sections */
+.measureup .answer .level_graphic .quad div {
+	border:1px solid #d3d8bf;
+	background:url('../../../../consumer_assets/site_images/widgets/aminormal/graph_top.gif') no-repeat;
+	float:left;
+	font-size:80%;
+	font-weight:noraml;
+	line-height:100%;
+	padding:4px 2px;
+	text-transform:none;
+	width:59px;
+}
+.measureup .answer .level_graphic .quad .first {
+	border-radius:15px 0 0 15px;
+	border-right:0px;
+}
+.measureup .answer .level_graphic .quad .second {
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+}
+.measureup .answer .level_graphic .quad .third {
+	border-left:0px;
+	border-right:1px solid #fff;
+	border-radius:0px;
+	width:60px;
+}
+.measureup .answer .level_graphic .quad .fourth {
+	border-left:0px;
+	border-radius:0 15px 15px 0;
+}
+
+.measureup .answer .level_graphic .quad .green {
+	background-color:#b6d68f;
+	background-position:50% -1px;
+	color:#546a38;
+}
+.measureup .answer .level_graphic .quad .orange {
+	background-color:#ffe7c1;
+	background-position:50% 33%;
+	color:#894305;
+}
+.measureup .answer .level_graphic .quad .yellow {
+	background-color:#fcea98;
+	background-position:50% 66%;
+	color:#8f7613;
+}
+.measureup .answer .level_graphic .quad .red {
+	background-color:#f1a371;
+	background-position:50% 99%;
+	color:#6a220c;
+}
+
+/* Rounded corners for IE */
+.browserIE_7 .measureup .answer .level_graphic .quad, .browserIE_8 .measureup .answer .level_graphic .quad {
+	margin:0;
+}
+.browserIE_7 .measureup .answer .level_graphic, .browserIE_8 .measureup .answer .level_graphic {
+	border:0px;
+	border-radius:0px;
+}
+.browserIE_7 .measureup .answer .level_graphic .quad div, .browserIE_8 .measureup .answer .level_graphic .quad div {
+	background-color:transparent;
+	border:0px;
+	border-radius:0px;
+	height:26px;
+	padding:6px 2px 0 2px;
+}
+.browserIE_7 .measureup .answer .level_graphic .quad .second,
+.browserIE_8 .measureup .answer .level_graphic .quad .second {
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+	width:61px;
+}
+.browserIE_7 .measureup .answer .level_graphic .quad .third,
+.browserIE_8 .measureup .answer .level_graphic .quad .third {
+	border-left:0px;
+	border-right:1px solid #fff;
+	width:61px;
+}
+.browserIE_7 .measureup .answer .level_graphic .quad .first.green, .browserIE_8 .measureup .answer .level_graphic .quad .first.green {
+	background-position:0 0;
+}
+.browserIE_7 .measureup .answer .level_graphic .quad .first.orange, .browserIE_8 .measureup .answer .level_graphic .quad .first.orange {
+	background-position:0 33%;
+}
+.browserIE_7 .measureup .answer .level_graphic .quad .first.yellow, .browserIE_8 .measureup .answer .level_graphic .quad .first.yellow {
+	background-position:0 67%;
+}
+.browserIE_7 .measureup .answer .level_graphic .quad .first.red, .browserIE_8 .measureup .answer .level_graphic .quad .first.red {
+	background-position:0 100%;
+}
+
+.browserIE_7 .measureup .answer .level_graphic .quad .second.green, .browserIE_8 .measureup .answer .level_graphic .quad .second.green {
+	background-position:50% 0;
+}
+.browserIE_7 .measureup .answer .level_graphic .quad .second.orange, .browserIE_8 .measureup .answer .level_graphic .quad .second.orange {
+	background-position:50% 33%;
+}
+.browserIE_7 .measureup .answer .level_graphic .quad .second.yellow, .browserIE_8 .measureup .answer .level_graphic .quad .second.yellow {
+	background-position:50% 67%;
+}
+.browserIE_7 .measureup .answer .level_graphic .quad .second.red, .browserIE_8 .measureup .answer .level_graphic .quad .second.red {
+	background-position:50% 100%;
+}
+
+.browserIE_7 .measureup .answer .level_graphic .quad .third.green, .browserIE_8 .measureup .answer .level_graphic .quad .third.green {
+	background-position:50% 0;
+}
+.browserIE_7 .measureup .answer .level_graphic .quad .third.orange, .browserIE_8 .measureup .answer .level_graphic .quad .third.orange {
+	background-position:50% 33%;
+}
+.browserIE_7 .measureup .answer .level_graphic .quad .third.yellow, .browserIE_8 .measureup .answer .level_graphic .quad .third.yellow {
+	background-position:50% 67%;
+}
+.browserIE_7 .measureup .answer .level_graphic .quad .third.red, .browserIE_8 .measureup .answer .level_graphic .quad .third.red {
+	background-position:50% 100%;
+}
+
+.browserIE_7 .measureup .answer .level_graphic .quad .fourth.green, .browserIE_8 .measureup .answer .level_graphic .quad .fourth.green {
+	background-position:100% 0;
+}
+.browserIE_7 .measureup .answer .level_graphic .quad .fourth.orange, .browserIE_8 .measureup .answer .level_graphic .quad .fourth.orange {
+	background-position:100% 33%;
+}
+.browserIE_7 .measureup .answer .level_graphic .quad .fourth.yellow, .browserIE_8 .measureup .answer .level_graphic .quad .fourth.yellow {
+	background-position:100% 67%;
+}
+.browserIE_7 .measureup .answer .level_graphic .quad .fourth.red, .browserIE_8 .measureup .answer .level_graphic .quad .fourth.red {
+	background-position:100% 100%;
+}
+
+.browserIE_7 .measureup .answer .level_graphic p, .browserIE_8 .measureup .answer .level_graphic p {
+	background:url('../../../../consumer_assets/site_images/widgets/aminormal/graph_btm.gif') 0 100% no-repeat;
+	margin:0;
+	padding:8px 0 5px;
+}
+/* End IE specific Styles */
+
+/* Gradient */
+.measureup .answer .level_graphic .grad div {
+	border:1px solid #d3d8bf;
+	background:url('../../../../consumer_assets/site_images/widgets/aminormal/graph_top.png') no-repeat;
+	float:left;
+	font-size:80%;
+	font-weight:bold;
+	line-height:100%;
+	padding:4px 2px;
+	text-transform:uppercase;
+	width:34px;
+}
+.measureup .answer .level_graphic .grad .first {
+	background-position:-2px -2px;
+	border-radius:15px 0 0 15px;
+	border-right:0px;
+}
+.measureup .answer .level_graphic .grad .second {
+	background-position:50% -2px;
+	border-left:0px;
+	border-right:0px;
+	width:177px;
+}
+.measureup .answer .level_graphic .grad .third {
+	background-position:99% -2px;
+	border-left:0px;
+	border-radius:0 15px 15px 0;
+}
+
+/* Rounded corners for IE */
+.browserIE_7 .measureup .answer .level_graphic .grad div, .browserIE_8 .measureup .answer .level_graphic .grad div {
+	background-color:transparent;
+	border:0px;
+	border-radius:0px;
+	height:26px;
+	padding:6px 2px 0 2px;
+}
+.browserIE_7 .measureup .answer .level_graphic .grad .second, .browserIE_8 .measureup .answer .level_graphic .grad .second {
+	border:0px;
+	width:83px;
+}
+/* End IE specific Styles */
+
+.measureup .answer .level_graphic p {
+	color:#333;
+	clear:both;
+	font-size:95%;
+}
+.measureup .answer .level_graphic p span {
+	font-weight:bold;
+}
+
+.measureup .answer .cta {
+	border-top:1px solid #d3d8bf;
+	margin:12px 0;
+	padding:8px 0 0;
+}
+.measureup .answer .cta h6 {
+	border:none;
+	color:#7d963a;
+	font-size:105%;
+	margin:0;
+}
+.measureup .answer .cta p {
+	font-size:90%;
+	margin:4px 0 5px 0;
+}
+.measureup .answer .cta a {
+	margin:5px auto;
+}
+
+.measureup .answer .newsletter {
+	background:#fcfcfa;
+	border:1px solid #d3d8bf;
+	border-radius:5px;
+	display:none;
+	margin:10px 0;
+	padding:5px 15px;
+}
+.measureup .answer .newsletter h6 {
+	border:none;
+	color:#7d963a;
+	font-size:100%;
+	margin:0;
+}
+.measureup .answer .newsletter p {
+	font-size:90%;
+	margin:4px 0 0;
+}
+
+.measureup .answer .sources {
+	margin:0 0 10px 0;
+}
+.measureup .answer .sources .view_sources {
+	font-size: 90%;
+	font-weight: bold;
+}
+.measureup .answer .sources .view_sources a#wdgt_sources_toggle {
+	background-position: center right;
+	background-repeat: no-repeat;
+	padding-right: 18px;
+}
+.measureup .answer .sources .view_sources a#wdgt_sources_toggle.hide {
+	background-image: url('../../../../consumer_assets/site_images/modules/2009_funded/view_sources_plus.gif');
+}
+.measureup .answer .sources .view_sources a#wdgt_sources_toggle.show {
+	background-image: url('../../../../consumer_assets/site_images/modules/2009_funded/view_sources_minus.gif');
+}
+.measureup .answer .sources #wdgt_source_text {
+	display:none;
+	padding-bottom: 10px;
+}
+.measureup .answer .sources #wdgt_source_text p {
+	font-size: 85%;
+	margin: 5px 0px 0px 0px;
+}
+.measureup .answer p.med_review {
+	font-size: 85%;
+	padding-top: 1px;
+}
+
+.measureup label.privacy_label {
+	color: black;
+	display: block;
+	font-size: 1.0em;
+	font-style: italic;
+	margin: 20px 10px 5px 0;
+}
+
+.measureup label.privacy_label a {
+	display: inline-block;
+	text-indent: 20px;
+}
+
+.measureup .buttons .reg_down {
+	color: red;
+	margin: 0 20px 0 0;
+	padding: 10px 0 0;
+}

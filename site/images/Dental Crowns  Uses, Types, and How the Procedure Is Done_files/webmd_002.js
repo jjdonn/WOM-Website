@@ -1,0 +1,7 @@
+/*
+ * webmd.mobile.swipe
+ */
+/*
+ * webmd.mobile.swipe
+ */
+(function(a){a.fn.webmd_swipe=function(b){if(webmd.useragent.getTouch()==false){return false}var c={threshold:{x:20,y:20},scrolling:false,swiping:false,swipeLeft:function(){return true},swipeRight:function(){return true},moveLeft:function(){return true},moveRight:function(){return true},moving:function(d){return true},noSwipe:function(d){return true},iOSVersion:false};if(webmd.useragent.getDevice()=="iphone"){iOSVersion=parseFloat(navigator.userAgent.split("iPhone OS")[1].split(" like")[0].replace(/_/g,"."))}var b=a.extend(c,b);if(!this){return false}return this.each(function(){var h=a(this);var f={x:0,y:0};var d={x:0,y:0};function j(k){d.x=k.targetTouches[0].pageX;d.y=k.targetTouches[0].pageY;var n=f.y-d.y;var o=f.x-d.x;var l=Math.abs(n);var m=Math.abs(o);if(m>5){if(m>l){c.swiping=true;k.preventDefault()}}if(l>m&&!c.swiping){c.scrolling=true}if(!c.scrolling){c.moving({x:o,y:n})}}function g(k){k.preventDefault();c.scrolling=false;c.swiping=false;changeX=f.x-d.x;if(changeX>c.threshold.x){return c.swipeLeft()}if(changeX<(c.threshold.x*-1)){return c.swipeRight()}return c.noSwipe(d.x)}function e(k){if(c.iOSVersion<4.2){a("#top_Ad_Iframe").css("width","318px")}f.x=k.targetTouches[0].pageX;f.y=k.targetTouches[0].pageY;d.x=f.x;d.y=f.y}function i(k){}this.addEventListener("touchstart",e,false);this.addEventListener("touchmove",j,false);this.addEventListener("touchend",g,false);this.addEventListener("touchcancel",i,false)})}})(jQuery);

@@ -1,0 +1,16 @@
+html, body, form, pre.nullNode, xmp.nullNode { margin:0px; }
+
+.content-inner{ position:relative; }
+.content-fixed, .content-full{ position:absolute; width:100%; height:100%; top:0; right:0; bottom:0; left:0; }
+header, footer, #body-content { display:block; position:relative; }
+header .content-inner.bg, #body-content .content-inner.bg, footer .content-inner.bg {
+	height:inherit; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; -ms-box-sizing:border-box;
+}
+header > header-wrap.fixed, footer > #footer-wrap.fixed { position:fixed; top:0; right:0; bottom:0; left:0; z-index:999997; }
+footer > #footer-wrap.fixed { top:auto; }
+
+/*body{font-family: Arial, Helvetica, sans-serif; font-size: 16px;}*/
+@font-face {
+	font-family: "Arial Black";
+	src: local("Arial Black");
+}

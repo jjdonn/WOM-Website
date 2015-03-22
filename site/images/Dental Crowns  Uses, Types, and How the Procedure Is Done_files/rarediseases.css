@@ -1,0 +1,45 @@
+.rarediseases {
+	border:#ebebeb 1px solid;
+	margin-bottom:10px;
+	}
+.rarediseases .breaker {
+	clear:both;
+	width:100%;
+	height:1px;
+	}	
+.rarediseases .banner, .reskin .rarediseases .banner{
+	background:#fff;
+	border-bottom:#ebebeb 1px solid;
+	color:#625948 !important;
+	padding:6px;
+	font-size:14px;
+	font-weight:bold;
+	}	
+.rarediseases ul, .reskin .rarediseases ul{
+        padding:0 0 0 10px;
+	list-style: none;
+	}
+.rarediseases ul li, .reskin .rarediseases ul li{
+    background: url("http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/modules/li_bull_blue.gif") no-repeat scroll left 6px rgba(0, 0, 0, 0);
+    float: left;
+list-style: none;
+    padding-bottom: 4px;
+    padding-left:12px;
+    padding-right: 8px;
+	font-size: 13px;
+    width:210px ;
+	}
+.article_rdr .rarediseases ul li, .article_rdr .reskin .rarediseases ul li{
+background: url("http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/modules/li_bull_blue.gif") no-repeat scroll left 10px rgba(0, 0, 0, 0);
+}
+
+.rarediseases ul li:nth-child(odd){clear:both;}
+	
+.article_rdr .rarediseases ul li{
+    width:90%;
+	}
+.article_rdr .rarediseases{
+    width:207px;
+	float:right;
+	margin-left:10px;
+	}			

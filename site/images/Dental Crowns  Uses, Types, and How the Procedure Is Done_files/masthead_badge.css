@@ -1,0 +1,44 @@
+.bottom_header .searchContainer_rdr #searchQuery_fmt {
+	background-position: right;
+	width: 305px;
+}
+.bottom_header .search_date {
+	width: 400px !important;
+}
+.bottom_header .login_rdr {
+	float: right !important;
+	padding-top: 0px !important;
+	width: 220px;
+}
+ul#log_reg_hdr {
+	float: right;
+	height: 20px;
+	margin: 0px;
+	padding: 0px;
+}
+ul#log_reg_hdr li {
+	background: #fff;
+	float: left;
+	font-weight: bold;
+	padding: 0px 2px;
+}
+ul#log_reg_hdr li.login_bg_fmt {
+	background: #fff url("../../../consumer_assets/site_images/icons/icon_login_12x12.gif") 0px 2px no-repeat;
+	padding: 0px 2px 0px 16px;
+}
+#masthead_badge {
+	display: block;
+	float: right;
+	margin: -70px 0 0 0;
+	padding: 7px 74px 0px 0px;
+}
+
+#masthead_badge a {
+width:205px;
+height:45px;
+display:block;
+background:url(../../../consumer_assets/site_images/modules/masthead_fit_sprite.jpg) 0 0 no-repeat;
+}
+#masthead_badge a:hover {
+background:url(../../../consumer_assets/site_images/modules/masthead_fit_sprite.jpg) 0 -45px no-repeat;
+}

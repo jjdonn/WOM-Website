@@ -1,0 +1,643 @@
+
+//<!--Copyright © 1998-2011 SurveyWriter.com-->
+
+
+//Get search string from script tag
+var searchString_sw = "vWebmd=1&itype=4&prg=[InsertProgramCode]&adid=1031649&site=2&affil=20&xpg=4208&hcent=872&scent=&leaf=1235&artid=091e9c5e80007b91&uri=%2Foral-health%2Fguide%2Fdental-crowns&hostName=www.surveywriter.net";
+
+var strReferrer=document.referrer;
+  strReferrer=strReferrer.replace("http://","");
+  strReferrer=strReferrer.replace("https://","");
+     var arrayReferrer=strReferrer.split("/");
+        var varReferrer=arrayReferrer[0];
+		
+var isTest_sw = query_sw('test');
+var isExit_sw = query_sw('exit');
+var itype_sw = query_sw('itype');
+
+var TriggerLogic_sw="1==1";
+var popupDelay_sw="0";
+var popUpOdds_sw=0;
+var testType_sw=0; //Control=0 ; Exposed=1
+var PIN=0;
+var tpix='';
+
+//if (itype_sw=='1') {popUpOdds_sw = 20;TriggerLogic_sw="TrackingAdViews_sw < 1";popupDelay_sw=15;TriggerLogic_sw="adViews_sw > 1";isExit_sw=1;isExit_sw=2;popupDelayR_sw=10;}
+//Modify popup odds. A 1 means 1% of the hits, 10=10%, etc...
+//Keep the 99 itype as is
+if (itype_sw=='99') {popUpOdds_sw = 0;testType_sw=1;}
+
+if (itype_sw=='1') {popUpOdds_sw = 0;testType_sw=0;}
+if (itype_sw=='2') {popUpOdds_sw = 0;testType_sw=0;}
+
+if (itype_sw=='3') {popUpOdds_sw = 0;testType_sw=1;popupDelay_sw=5;TriggerLogic_sw="adViews_sw > 1";}
+if (itype_sw=='4') {popUpOdds_sw = 0;testType_sw=1;popupDelay_sw=5;TriggerLogic_sw="adViews_sw > 1";}
+if (itype_sw=='5') {popUpOdds_sw = 0;testType_sw=1;isExit_sw=1;}
+if (itype_sw=='6') {popUpOdds_sw = 0;testType_sw=1;popupDelay_sw=5;TriggerLogic_sw="adViews_sw > 1";}
+
+
+if (isExit_sw > '0') {
+  var winType=2;
+}
+else
+{
+  var winType=1;
+}
+
+if (1!=1) {
+
+}
+		
+else if ((top != self) && (location.href.toUpperCase().indexOf('SWILINK.HTML') == -1)){
+
+searchString_sw = searchString_sw + "&sname=C5213_2014320_AT1x.asp";
+
+//document.write('<iframe style="visibility:hidden;" src="http://' + varReferrer + '/richmedia/swiLink.html?' + searchString_sw + '">');
+writeIframe_sw('http://' + varReferrer + '/richmedia/swiLink.html?' + searchString_sw)
+
+}
+else
+{
+//Set intercept in motion
+//-----------------------
+
+if (isExit_sw > 0) {window.onunload=dounload_sw;}
+
+var noGo_sw=0;
+var expireDays_sw=180;
+
+  expireDate_sw=getDate_sw(expireDays_sw);
+
+//Set PIM
+var isPIM_sw=0;
+if (parent.parent.webmd && parent.parent.webmd.p && parent.parent.webmd.p.pim) {isPIM_sw=1;}
+
+if (isPIM_sw==1) {
+  noGo_sw=0;
+  window.JSON = parent.parent.JSON;
+  window.webmd = parent.parent.webmd;
+     if (!webmd.p.pim.isAllowed()) {
+       noGo_sw=1;
+     }
+   }
+else
+   {
+     noGo_sw=1;
+   }
+
+
+if (isTest_sw==1) {noGo_sw=0;}
+
+if ((location.href=="http://www.webmd.com/") || (parent.parent.location.href=="http://www.webmd.com/")) {
+       noGo_sw=1;
+   }
+   
+
+
+//Get JSON Cookie
+//Place cookie values into objJsonCookie_sw
+//setCookie_sw('jsonCookie_sw', JSON.stringify(objJsonCookie_sw), 180);
+
+var strJsonCookie_sw=getCookie_sw('jsonCookie_sw');
+
+
+if (strJsonCookie_sw==null) {strJsonCookie_sw = ' ';}
+
+try {
+	  var objJsonCookie_sw = JSON.parse(strJsonCookie_sw);
+    } catch (e) {
+   	  var objJsonCookie_sw = {};
+    }
+	
+   	  var objJsonCookiePN_sw = {};
+   	  var objJsonCookiePNvars_sw = {};
+
+//Cookie records Intercept Served for this project
+var cn="C5213";
+var pn="2014320"
+
+if (objJsonCookie_sw[cn]==null) {
+  objJsonCookiePNvars_sw.e=0;
+  objJsonCookiePNvars_sw.p=0;
+  objJsonCookiePNvars_sw.x=expireDate_sw;
+    objJsonCookiePN_sw[pn]=objJsonCookiePNvars_sw;
+      objJsonCookie_sw[cn]=objJsonCookiePN_sw;
+}
+else if (objJsonCookie_sw[cn][pn]==null) {
+  objJsonCookiePNvars_sw.e=0;
+  objJsonCookiePNvars_sw.p=0;
+  objJsonCookiePNvars_sw.x=expireDate_sw;
+  objJsonCookie_sw[cn][pn]=objJsonCookiePNvars_sw;
+}
+
+//Delete cookie if expire date has been reached
+destroyCookie();
+
+
+
+//Write JSON Cookie back out immediately with testType_sw
+if (testType_sw==1) {
+   objJsonCookie_sw[cn][pn].e = testType_sw;
+      setCookie_sw('jsonCookie_sw', JSON.stringify(objJsonCookie_sw), 180);
+}
+
+//Cookie records Intercept Served for this project
+    var surveyAsked_sw=objJsonCookie_sw[cn][pn].p;
+
+
+
+if (popUpOdds_sw.length==0) {popUpOdds_sw = 0;}
+
+//Set 5 second delay for control in case exposed is also on the page
+if ((testType_sw==0) && (popupDelay_sw == 0)) {popupDelay_sw=5;}
+
+
+//Cookie to read number of times page/ad viewed
+  var adViewsCookieName_sw= "a" + itype_sw;
+     var adViews_sw=objJsonCookie_sw[cn][pn][adViewsCookieName_sw];
+	   if (adViews_sw==null) {adViews_sw=0;}
+	     adViews_sw=parseFloat(adViews_sw) + 1;
+		   objJsonCookie_sw[cn][pn][adViewsCookieName_sw] = adViews_sw;
+
+
+//Popup Trigger Logic based on page/ad views
+//var TriggerLogic_sw = query_sw('trLogic');
+  if (TriggerLogic_sw.length==0) {TriggerLogic_sw = "1==1";}
+    var AdViewFlag_sw=0;
+      if (eval(TriggerLogic_sw)) {AdViewFlag_sw=1;}
+
+		   
+//Check for Test Type Cookie
+  var exposedCookieValue_sw=objJsonCookie_sw[cn][pn].e;
+  	if (exposedCookieValue_sw==null) {exposedCookieValue_sw=0;}
+      if (testType_sw==1) {objJsonCookie_sw[cn][pn].e = testType_sw;}
+        if ((exposedCookieValue_sw==1) && (testType_sw==0)) {noGo_sw=1;}
+
+
+//Set invite timer delay
+//var popupDelay_sw = query_sw('delayTime');
+  if (popupDelay_sw.length==0) {popupDelay_sw = 0;}
+
+
+
+
+//Sets the total percentage figure. Currently set to work on a 100 scale 
+var popUpScale_sw = 100;
+
+
+//Set default for passSegFlag for Health Check Trigger
+  var passSegFlag_sw=0
+  var segValue_sw="";
+   var memID_sw="";
+    if (popupDelay_sw < 0) {
+         popupDelay_sw = 0;
+         passSegFlag_sw = 1;
+    }
+
+
+
+//Popup Window Content
+//GFK Survey IFrame Content Window
+var iContent_sw='<div style="text-align:right;position:relative;left:-7px;top:-7px;WIDTH: 400px;height:364px;"><span onclick="javascript:iClose_sw(' + winType + ');" style="z-index:105;position:relative;left:-10px;top:11px;background-color:white;width:10px;cursor:pointer;border:1px solid black;font:bold 10pt arial;">X</b></span><TABLE style="Border:0px solid gray;POSITION: relative; top:-18px;WIDTH: 400px; FONT-FAMILY: helvetica; BACKGROUND: url(https://www.surveywriter.net/in/survey/survey140/images/bg_nopic.jpg) no-repeat left top; HEIGHT: 364px;padding-left:20px;padding-right:20px;" border=0 cellPadding=0><TBODY><TR><TD><BR><P style=";POSITION: relative; TEXT-ALIGN: center; COLOR: #546322; FONT-SIZE: 14pt; TOP: 13px; FONT-WEIGHT: bold">Thank you for visiting WebMD. </P><P style="POSITION: relative; TEXT-ALIGN: center; COLOR: #546322; FONT-SIZE: 12pt; TOP: 13px; FONT-WEIGHT: bold">We would like to learn about you through a short survey that should take no more than 3-5 minutes of your time.</P><BR><P style="POSITION: relative; TEXT-ALIGN: center; FONT: 8pt arial; TOP: 0px">Before proceeding, please review the WebMD Privacy Statement below.<BR><BR><IMG class=btn_survey style="CURSOR: pointer" onclick="javascript:window.open(&#39;http://survey.o.webmd.com/in/survey/survey140/2014320.asp?vWebmd=1&itype=4&prg=[InsertProgramCode]&adid=1031649&site=2&affil=20&xpg=4208&hcent=872&scent=&leaf=1235&artid=091e9c5e80007b91&uri=%2Foral-health%2Fguide%2Fdental-crowns&hostName=www.surveywriter.net&#39;,&#39;Survey&#39;,&#39;toolbar=no,directories=no,location=no,status=yes,menubar=no,resizable=yes,scrollbars=yes,width=800,height=500,screenY=50,left=50,top=50&#39;);iClose_sw(' + winType + ');" alt="Take the Survey" src="http://www.surveywriter.net/in/survey/survey140/images/btn_takethesurvey.jpg" border=0>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IMG class=btn_nothanks style="CURSOR: pointer" onclick="javascript:iClose_sw(' + winType + ');" alt="No Thanks" src="http://www.surveywriter.net/in/survey/survey140/images/btn_nothanks.jpg" border=0> <P style="TEXT-ALIGN: left; FONT: 7.5pt arial">This survey is being conducted by the WebMD marketing research department. All information will be used in a manner consistent with the WebMD <A style="COLOR: #006699; TEXT-DECORATION: none" href="http://www.webmd.com/about-webmd-policies/about-privacy-policy?ss=ftr" target=_blank>privacy policy.</A> Your responses will not be disclosed with any information that can personally identify you (eg, email address, name, etc). You will not be re-contacted regarding your answers to this survey.</P></TD></TR></TBODY></TABLE></td></tr></table><div title="2014320 itype=4" style="z-index:115;cursor:pointer;position:absolute;right:1px;bottom:14px;width:5px;">&nbsp;</div></div><img SRC="http://www.surveywriter.net/in/DM_InterceptHits.asp?CN=C5213&UniqueID=4&PN=2014320&rndi=' + randomRange_sw() + '" height=1 width=1>';
+
+
+
+
+
+if ((isExit_sw != 1) && (noGo_sw==0)) {
+
+  //Check to see if Popup Window should trigger
+    checkTriggerPopup(AdViewFlag_sw,popUpOdds_sw,surveyAsked_sw,popupDelay_sw,iContent_sw);
+
+  //Write JSON Cookie back out
+    setCookie_sw('jsonCookie_sw', JSON.stringify(objJsonCookie_sw), 180);
+
+}
+
+}  //Closed intercept in motion
+
+
+
+//Being Function Calls
+//--------------------
+
+
+ function checkTriggerPopup(AdViewFlag_sw,popUpOdds_sw,surveyAsked_sw,popupDelay_sw,iContent_sw) {
+ if (noGo_sw==0) {
+  if (AdViewFlag_sw==1) {
+    var randomN_sw=randomRange_sw();
+    if (randomN_sw <= popUpOdds_sw) {
+
+
+	    if (surveyAsked_sw==0) {
+            if (popupDelay_sw > 0) {
+                 setTimeout("showPopup_sw(iContent_sw)",parseFloat(popupDelay_sw) * 1000);
+                }
+			else if (passSegFlag_sw==1) 
+			    {
+				  showPopup_sw(iContent_sw);
+				}
+			else if (isExit_sw > 0) 
+			    {dounload_sw();}
+            else
+                {
+				showPopup_sw(iContent_sw);
+               }
+        }
+    }
+  }
+ }
+}
+
+
+function writeIframe_sw_NEW(iframeSrc) {   
+
+  var iDiv = document.createElement('DIV');
+     //document.getElementsByTagName('body')[0].appendChild(iDiv);
+     document.getElementsByTagName('body')[0].insertBefore(iDiv, document.getElementsByTagName('body')[0].firstChild);
+      var iframe = new IFrame_sw(iDiv);
+          iframe.src=iframeSrc;
+		     iframe.style.height="1px";
+		     iframe.style.width="1px";
+		     iframe.style.position="absolute";
+		     iframe.style.top="-1000px";
+
+}
+
+
+function writeIframe_sw(iframeSrc) {   
+
+  var iDiv = document.createElement('DIV');
+     document.getElementsByTagName('body')[0].appendChild(iDiv);
+      var iframe = new IFrame_sw(iDiv);
+          iframe.src=iframeSrc;
+}
+
+function showPopup_sw(iContent_sw) {   
+
+//Check to see if exposure has happened since intercept was triggered
+//-------------------------------------------------------------------
+var strJsonCookieTemp_sw=getCookie_sw('jsonCookie_sw');
+  var objJsonCookieTemp_sw = JSON.parse(strJsonCookieTemp_sw);var exposedCookieValueTemp_sw=objJsonCookieTemp_sw[cn][pn].e;	
+    if ((exposedCookieValueTemp_sw==1) && (testType_sw==0)) {noGo_sw=1;}
+
+ if (noGo_sw==1) {return false;}
+
+  var iDiv = parent.parent.document.createElement('DIV');
+     parent.parent.document.getElementsByTagName('body')[0].appendChild(iDiv);
+      var iframe = new IFrame_sw(iDiv);
+        writeIContent_sw(iframe,iContent_sw);
+		 if ((isPIM_sw==1) && (passSegFlag_sw != 1)) {
+ 		   webmd.p.pim.increment();
+         }
+			   objJsonCookie_sw[cn][pn].p = 1;
+
+               //Write JSON Cookie back out
+                  setCookie_sw('jsonCookie_sw', JSON.stringify(objJsonCookie_sw), 180);
+}
+
+
+
+
+
+function writeIContent_sw(iframe,iContent_sw) {
+
+   iframe.style.position='absolute';
+   iframe.style.left="300px";
+   iframe.style.top="100px";
+   iframe.style.width="400px";
+   iframe.style.height="364px";
+   iframe.style.zIndex=100;
+   iframe.style.backgroundColor="#CBD9A8";
+   
+   if (passSegFlag_sw==1) {
+        iframe.style.visibility="hidden";
+   }
+     
+
+
+  var div = iframe.doc.createElement("div");   
+  div.innerHTML = iContent_sw;   
+  iframe.doc.body.appendChild(div);   
+  iframe.scrolling="no";
+  iframe.doc.getElementsByTagName('body')[0].style.overflow='hidden';
+  iframe.doc.body.style.backgroundColor="#CBD9A8";
+
+  
+   var script= document.createElement('script');
+   script.type= 'text/javascript';
+   script.src= 'http://www.surveywriter.net/in/survey/survey140/iCloseFrame.js';
+   
+   
+   try
+  {
+   div.appendChild(script);
+  }
+     catch(err)
+  {
+    iframe.style.visibility="hidden";
+  }
+
+
+     //iframe.style.width=div.childNodes[0].childNodes[1].clientWidth + 2;
+     //iframe.style.height=div.childNodes[0].childNodes[1].clientHeight + 2;
+
+}
+
+
+
+function IFrame_sw(parentElement)
+{
+   // Create the iframe which will be returned
+   var iframe = document.createElement("iframe");
+     iframe.frameBorder="0";
+        iframe.id="iPopFrame_sw";
+        iframe.name="iPopFrame_sw";
+
+   // If no parent element is specified then use body as the parent element
+   if(parentElement == null)
+      parentElement = parent.document.body;
+   // This is necessary in order to initialize the document inside the iframe
+   parentElement.appendChild(iframe);
+
+   // Initiate the iframe's document to null
+   iframe.doc = null;
+
+   // Depending on browser platform get the iframe's document, this is only
+   // available if the iframe has already been appended to an element which
+   // has been added to the document
+   if(iframe.contentDocument)
+      // Firefox, Opera
+      iframe.doc = iframe.contentDocument;
+   else if(iframe.contentWindow)
+      // Internet Explorer
+      iframe.doc = iframe.contentWindow.document;
+   else if(iframe.document)
+      // Others?
+      iframe.doc = iframe.document;
+
+   // If we did not succeed in finding the document then throw an exception
+   if(iframe.doc == null)
+      throw "Document not found, append the parent element to the DOM before creating the IFrame";
+
+   // Create the script inside the iframe's document which will call the
+   iframe.doc.open();
+   iframe.doc.close();
+
+   // Return the iframe, now with an extra property iframe.doc containing the
+   // iframe's document
+   return iframe;
+
+}
+
+
+//Cookie Functions
+//----------------
+
+function setCookie_sw_Old(name, value, expiresDays, path, domain, secure) {
+path="/";
+var CurrentDomain=document.domain;
+
+var now = new Date();
+ fixDate_sw(now);
+   now.setTime(now.getTime() + expiresDays * 24 * 60 * 60 * 1000);
+     expires=now;
+
+
+if (CurrentDomain.indexOf(".") > -1) {
+   var arCurrentDomain=CurrentDomain.split(".");
+     domain=arCurrentDomain[arCurrentDomain.length-2] + "." + arCurrentDomain[arCurrentDomain.length-1];
+   }
+else
+   {
+   domain="";
+   }
+
+
+  var curCookie = name + "=" + escape(value) +
+      ((expires) ? "; expires=" + expires.toGMTString() : "") +
+      ((path) ? "; path=" + path : "") +
+      ((domain) ? "; domain=" + domain : "") +
+      ((secure) ? "; secure" : "");
+  document.cookie = curCookie;
+}
+
+
+function setCookie_sw(name, value, expiresDays, path, domain, secure) {
+path="/";
+var CurrentDomain=document.domain;
+
+var now = new Date();
+ fixDate_sw(now);
+   now.setTime(now.getTime() + expiresDays * 24 * 60 * 60 * 1000);
+     expires=now;
+
+
+if (CurrentDomain.indexOf(".") > -1) {
+   var arCurrentDomain=CurrentDomain.split(".");
+     domain=arCurrentDomain[arCurrentDomain.length-2] + "." + arCurrentDomain[arCurrentDomain.length-1];
+   }
+else
+   {
+   domain="";
+   }
+
+
+  var curCookie = name + "=" + encodeValue_sw(value) +
+      ((expires) ? "; expires=" + expires.toGMTString() : "") +
+      ((path) ? "; path=" + path : "") +
+      ((domain) ? "; domain=" + domain : "") +
+      ((secure) ? "; secure" : "");
+  document.cookie = curCookie;
+}
+
+
+function getCookie_sw_Old(name) {
+  var dc = document.cookie;
+  var prefix = name + "=";
+  var begin = dc.indexOf("; " + prefix);
+  if (begin == -1) {
+    begin = dc.indexOf(prefix);
+    if (begin != 0) return null;
+  } else
+    begin += 2;
+  var end = document.cookie.indexOf(";", begin);
+  if (end == -1)
+    end = dc.length;
+  return unescape(dc.substring(begin + prefix.length, end));
+}
+
+
+
+function getCookie_sw(name) {
+  var dc = document.cookie;
+  var prefix = name + "=";
+  var begin = dc.indexOf("; " + prefix);
+  if (begin == -1) {
+    begin = dc.indexOf(prefix);
+    if (begin != 0) return null;
+  } else
+    begin += 2;
+  var end = document.cookie.indexOf(";", begin);
+  if (end == -1)
+    end = dc.length;
+  return decodeValue_sw(dc.substring(begin + prefix.length, end));
+}
+
+
+function fixDate_sw(date) {
+  var base = new Date(0);
+  var skew = base.getTime();
+  if (skew > 0)
+    date.setTime(date.getTime() - skew);
+}
+
+
+function query_sw(ji) {
+
+hu = searchString_sw;
+gy = hu.split("&");
+for (i=0;i<gy.length;i++) {
+ft = gy[i].split("=");
+if (ft[0] == ji) {
+return ft[1];
+}
+}
+return "";
+}
+
+
+function randomRange_sw () {
+        return Math.round(Math.random() * (popUpScale_sw-1)) + 1
+}
+
+function getiType(str) {
+
+var arrayStr=str.split("_");
+   if (arrayStr.length>1) {
+     return arrayStr[1];
+   }
+   else
+   {
+     return "0";
+   }
+}
+
+
+
+function dounload_sw() {
+
+//!!modified for exit early
+//!!-----------------------
+
+if (isExit_sw==2) {
+
+iContent_sw=iContent_sw.replace(/iClose_sw\(1\)/g,"iClose_sw\(2\)");
+
+winType=2;
+
+}
+//!!-----------------------
+
+
+if (objJsonCookie_sw[cn][pn].p == 1) {return false;}
+
+ if (noGo_sw==0) {
+   if (AdViewFlag_sw==1) {
+     if (randomRange_sw() <= popUpOdds_sw) {
+       if (!surveyAsked_sw) {
+
+
+         var popUpWindowFormat = "toolbar=no,directories=no,location=no,status=yes,menubar=no,resizable=yes,scrollbars=no,height=350,width=400,screenY=300,left=300,top=100";
+		   if (isPIM_sw==1) {
+ 		     webmd.p.pim.increment();
+           }
+
+
+         var popwin = window.open("", "popwin", popUpWindowFormat);
+           iContent_sw=iContent_sw + '<' + 'script type=text/javascript src="http://www.surveywriter.net/in/survey/survey140/iCloseFrame.js"></' + 'script>';
+	         var popwinText="<html><body style='margin-top:0px;'>" + iContent_sw + "</body></html>"
+               popwin.document.write(popwinText);
+		   	     //Write JSON Cookie back out
+		           	objJsonCookie_sw[cn][pn].p = 1;
+                      setCookie_sw('jsonCookie_sw', JSON.stringify(objJsonCookie_sw), 180);
+       }
+     }
+   }
+ }
+
+}
+
+function triggerSW(theSeg) {
+ 
+if (typeof(theSeg) != 'undefined') {
+        segValue_sw = theSeg;
+} else {
+        segValue_sw = -1;
+}
+
+ if (noGo_sw==1) {return false;}
+
+ if (popupDelayR_sw > 0) {
+	setTimeout("triggerSW(" + segValue_sw + ")",parseFloat(popupDelayR_sw) * 1000);
+       popupDelayR_sw=0;
+	     return;
+ }
+
+	
+if (parent.parent.document.getElementById('iPopFrame_sw') == null) {return false;}
+
+      parent.parent.document.getElementById('iPopFrame_sw').style.visibility="visible";
+		 objJsonCookie_sw[cn][pn].p = 1;
+           setCookie_sw('jsonCookie_sw', JSON.stringify(objJsonCookie_sw), 180);
+		     if (isPIM_sw==1) {
+ 		       webmd.p.pim.increment();
+             }
+}
+
+function getDate_sw(expireDays) {
+  var atDate=new Date();
+    atDate.setDate(atDate.getDate()+expireDays)
+	  var vDate=atDate.valueOf();
+	     vDate=Math.round(vDate/1000/60/60/24)
+        return vDate;
+}
+
+//Destroy cookie values for this project if past expire date
+function destroyCookie() {
+  var atDate_sw=new Date();
+    var vDate_sw=atDate_sw.valueOf();
+	  vDate_sw=Math.round(vDate_sw/1000/60/60/24)
+        var expireDate_sw=objJsonCookie_sw[cn][pn].x;
+          if (vDate_sw > expireDate_sw) {
+	   	     noGo_sw=1;
+		      delete objJsonCookie_sw[cn][pn];
+		        setCookie_sw('jsonCookie_sw', JSON.stringify(objJsonCookie_sw), 180);
+
+        }
+}
+
+function encodeValue_sw(value) {
+
+	return encodeURIComponent(value).replace(
+
+		// { %7B
+		// } %7D
+		// : %3A
+		// [ %5B
+		// ] %5D
+		// " %22
+		// , %2C
+
+			/%7B|%7D|%3A|%5B|%5D|%22|%2C/g,
+
+		// Replacement function for any match of the regular expression
+		function(s){ return decodeURIComponent(s) }
+	);
+
+}
+
+
+function decodeValue_sw(value) {
+	return decodeURIComponent(value);
+}

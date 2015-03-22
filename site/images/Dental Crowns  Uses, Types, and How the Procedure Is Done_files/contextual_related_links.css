@@ -1,0 +1,69 @@
+/*
+CSS for Contextual Related Links
+*/
+
+.contextual_links_fmt a {
+	font-weight: bold;
+}
+	
+.contextual_links_fmt h4 {
+	color: #E68E2D;
+	font-size: 90%;
+	margin: 0px;
+	padding: 0px 0px 4px 0px;
+}
+
+.contextual_links_fmt p {
+	font-size: 90%;
+	margin: 0px;
+	padding: 0px 0px 4px 0px;
+}
+
+.community_links_rdr {
+	background: transparent url("../../../consumer_assets/site_images/icons/12x12_checkmark_icon.gif") no-repeat 2px 9px;
+	border: 2px solid;
+	border-color: #E6DCB8;
+	border-left: 0px;
+	border-right: 0px;
+	padding: 6px 8px 10px 20px;
+	width: 456px;
+}
+ 
+.slideshow_links_rdr {
+	background: transparent url("../../../consumer_assets/site_images/icons/slideshow_icon.jpg") no-repeat 2px 12px;
+	border: 2px solid;
+	border-color: #E6DCB8;
+	border-left: 0px;
+	border-right: 0px;
+	padding: 9px 8px 10px 48px;
+	width: 428px;
+}
+
+.other_context_links_rdr {
+	background: transparent url("../../../consumer_assets/site_images/icons/12x12_checkmark_icon.gif") no-repeat 2px 11px;
+	padding: 10px 8px 10px 20px;
+	width: 456px;
+}
+	
+.other_context_links_rdr ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+	
+.other_context_links_rdr ul li {
+	background: transparent url("../../../consumer_assets/site_images/modules/flourish.gif") no-repeat 0px 3px;
+	font-size: 90%;
+	margin: 0px;
+	padding: 0px 0px 0px 16px;
+}
+	
+.other_context_links_rdr ul li a{
+	font-weight: normal;
+}
+ 
+.video_links_rdr {
+	background: transparent url("../../../consumer_assets/site_images/icons/video_icon.jpg") no-repeat 2px 15px;
+	padding: 10px 8px 10px 48px;
+	width: 428px;
+}

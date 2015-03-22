@@ -1,0 +1,257 @@
+/* Temp CSS for Daily Tips Module */
+
+.tipsModule {
+	background: url("http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/sponsored_programs/healthy_mouth_and_body_9/tips/images/listerine_tips_bg.png") no-repeat left top;
+	height: 229px;
+	margin: 0px;
+	position: relative;
+	width: 308px;
+}
+
+.tipsModule h3 {
+	clear: both;
+	color: #8DAB54;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: normal;
+	margin: 0px;
+	padding: 34px 0px 3px 19px;
+	text-indent: 0px;
+}
+
+.tipsModule h4 {
+	font-size: 10px;
+	line-height: 10px;
+	margin: 0px;
+	padding: 0px;
+	text-indent: -5000px;
+}
+
+.tipsModule .moduleContent {
+	position: absolute;
+	height: 222px;	
+	z-index: 1;
+	width: 300px;
+}
+
+.tipsModule .fade {
+	background: url("http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/sponsored_programs/healthy_mouth_and_body_9/tips/images/listerine_tips_bg.png") no-repeat left top;
+	display: none;
+	height: 229px;
+	margin: 0px;
+	position: absolute;
+	width: 308px;
+	z-index: 0;
+}
+
+.tipsModule .attribution {
+	font-size: 90%;
+	padding: 0px 0px 0px 10px;	
+	position: absolute;
+	right: 10px;
+	top: 12px;
+}
+
+.tipsModule .attribution a {
+	margin-right: 5px;
+}
+
+.tipsModule .attribution img {
+	vertical-align: middle
+}
+
+.tipsModule .tipContainer {
+	left: 22px;
+	height: 101px;
+	overflow: hidden;
+	position: absolute;
+	top: 80px;
+	width: 264px;
+	z-index: 0;
+}
+
+.tipsModule .tipContainer img.loading {
+	padding: 45px 0px 0px 111px;
+}
+
+.tipsModule .tipContainer .tip {
+	display: none;
+	position: absolute;
+	width: 235px;
+}
+	
+.tipsModule .tipContainer .tip .tipDate {
+	font-size: 10px;
+	padding: 3px 0px 2px;
+	text-transform: uppercase;
+}
+	
+.tipsModule .tipContainer .tip .tipContent {
+	color: #666666;
+	padding: 2px 0px 5px;
+}
+
+.tipsModule .tipContainer .tip .tipContent h5 {
+	display: inline;
+	font-size: 12px;
+}
+	
+.tipsModule .tipContainer .tip .tipContent p {
+	display: inline;
+	font-size: 12px;
+}
+	
+.tipsModule .tipControls {
+	left: 10px;
+	position: absolute;
+	top: 125px;
+	width: 288px;
+	z-index: 1;
+}
+
+.tipsModule .tipControls .btn_prev {
+	background: url("http://css.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/modules/tips/tips_btn_prev.png") no-repeat left top;
+	cursor: pointer;	
+	display: none;
+	left: 0px;
+	height: 23px;
+	position: absolute;
+	top: 0px;
+	width: 23px;
+}
+
+*html .tipsModule .tipControls .btn_prev {
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://css.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/modules/tips/tips_btn_prev.png')
+}
+	
+.tipsModule .tipControls .btn_next {
+	background: url("http://css.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/modules/tips/tips_btn_next.png") no-repeat left top;
+	cursor: pointer;
+	display: none;
+	height: 23px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 23px;
+}
+
+*html .tipsModule .tipControls .btn_next {
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://css.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/modules/tips/tips_btn_next.png')
+}
+	
+.tipsModule .tipControls .btn_prev_disabled {
+	background: url("http://css.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/modules/tips/tips_btn_prev_disabled.png") no-repeat left top;	
+	display: none;
+	left: 0px;
+	height: 23px;
+	position: absolute;
+	top: 0px;
+	width: 23px;
+}
+
+*html .tipsModule .tipControls .btn_prev_disabled {
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://css.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/modules/tips/tips_btn_prev_disabled.png')
+}
+	
+.tipsModule .tipControls .btn_next_disabled {
+	background: url("http://css.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/modules/tips/tips_btn_next_disabled.png") no-repeat left top;	
+	display: none;
+	height: 23px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 23px;
+}
+
+*html .tipsModule .tipControls .btn_next_disabled {
+	background: transparent;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://css.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/modules/tips/tips_btn_next_disabled.png')
+}
+	
+.tipsModule .viewAll {
+	bottom: 18px;
+	display: none;
+	font-size: 11px;
+	position: absolute;
+	right: 103px;
+	text-align: center;
+}
+
+.tipsModule .viewAll a {
+	background: url("http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/sponsored_programs/healthy_mouth_and_body_9/tips/images/listerine_btn_viewall.png") no-repeat left top;
+	color: #FFFFFF;
+	display: block;
+	font-size: 120%;
+	font-weight: normal;
+	height: 17px;
+	padding: 2px;
+	text-decoration: none;
+	width: 87px;
+}
+
+.listerine_icm {
+	background: url("http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/sponsored_programs/healthy_mouth_and_body_9/tips/images/lnch-sp_bg.jpg") no-repeat top left;
+	display: block;
+	height: 127px;
+	margin: 0px 0px 10px 0px;
+	width: 308px;
+}
+
+.listerine_icm .attribution {
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+}
+
+.listerine_icm .sponsored_text {
+	color: #FF6633;
+	font-size: 0.85em;
+	font-weight: bold;
+	margin: 0px;
+	padding: 7px 6px 0px 21px;
+}
+
+.listerine_icm .sponsored_text a:link,
+.listerine_icm .sponsored_text a:hover,
+.listerine_icm .sponsored_text a:visited,
+.listerine_icm .sponsored_text a:active {
+	color: #FF6633;
+}
+
+.listerine_icm .listerine_icm_body {
+	padding: 10px 32px 0px 108px;
+}
+
+.listerine_icm .listerine_icm_body p {
+	color: #666666;
+	font-size: 90%;
+	margin: 0px 0px 2px 0px;
+}
+
+.listerine_icm .listerine_icm_body .action_link {
+	color: #B28809;
+	font-size: 90%;
+	font-weight: bold;
+	_height: 18px; /* mimic min-height for IE6 */
+	margin: 0px 0px 10px 0px;
+	min-height: 18px;
+}
+
+.listerine_icm .listerine_icm_body .action_link a {
+	background: transparent url("http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/modules/icm/action_arrow.gif") no-repeat scroll right center;
+	line-height: 1.6em;
+	padding: 2px 25px 2px 0px;
+}
+
+.listerine_icm .listerine_icm_body .action_link a:link,
+.listerine_icm .listerine_icm_body .action_link a:hover,
+.listerine_icm .listerine_icm_body .action_link a:visited,
+.listerine_icm .listerine_icm_body .action_link a:active {
+	color: #B28809;
+}
+
+
+

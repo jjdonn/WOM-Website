@@ -1,0 +1,125 @@
+.fontSizeTwo, .article_rdr .fontSizeTwo  ol li {
+	font-size:120%;
+}
+.fontSizeTwo, .fontSizeTwo div, .fontSizeTwo h2 {
+	line-height:130%;
+}
+.fontSizeThree, .article_rdr .fontSizeThree ol li {
+	font-size:130%;
+}
+.fontSizeThree, .fontSizeThree div, .fontSizeThree h2 {
+	line-height:140%;
+}
+
+#textArea .font_sizer {
+	float:right;
+	margin: 0 0 0 10px;
+	line-height:16px;
+	font-size:100%;
+    text-align:left;
+    width:71px;
+}
+#textArea .font_sizer * {
+	line-height:16px;
+}
+#textArea .font_sizer_content {
+	border-right: 1px solid #e7e7e7;
+	border-left: 1px solid #e7e7e7;
+	padding: 0 4px 0 8px;
+	margin:0;
+	width: 56px;
+	overflow:hidden;
+	background: url(http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/other/share_bar.png) no-repeat center bottom;
+}
+#textArea .font_sizer_content a {
+	display:block;
+	text-decoration:none;
+	float:left;
+	margin: 0 6px 0 0;
+	padding:0;
+	cursor:pointer;
+}
+#textArea .font_sizer_content p {
+	font-size:80%;
+	margin: 0 0 3px 0;
+	padding: 0;
+}
+.font_sizer_content p {
+	color:#666;
+}
+#textArea .share_content a.fb_share {
+	width:15px;
+	height:17px;
+	background: url(http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/other/share_bar.png) no-repeat 0 0;
+	margin: 2px 8px 0 1px;
+}
+#textArea .share_content a.tw_share {
+	width:15px;
+	height:17px;
+	background: url(http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/other/share_bar.png) no-repeat -15px 0;
+}
+#textArea .font_sizer_bottom, #textArea .font_sizer_top {
+	width:70px;
+	background: url(http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/other/share_bar.png) no-repeat 0 -18px;
+	height:5px;
+	overflow:hidden;
+}
+#textArea .share_bottom, #textArea .font_sizer_bottom {
+	clear:both;
+	float:none;
+	background-position:0 -23px;
+	height:6px;
+}
+
+#textArea .share_font_bar .share_top, #textArea .share_font_bar .font_sizer_bottom {
+	background: none;
+	border:  1px solid #e7e7e7;
+	border-top: none;
+	width:68px;
+}
+#textArea .share_font_bar .share_top {
+	border-bottom: none;
+}
+
+#textArea .share_font_bar .font_sizer_content {
+	background:none;
+}
+
+#textArea .font_sizer_content a {
+	color:#3789b9;
+	padding: 1px 3px 0 3px;
+	height:17px;
+	margin-right:2px;
+}
+#textArea .module_fontSizeOne {
+	font-size:80%;
+	padding-top: 3px;
+	height:14px;
+}
+#textArea .module_fontSizeTwo {
+	font-size:100%;
+	padding-top: 2px;
+	height:15px;
+}
+#textArea .module_fontSizeThree {
+	font-size:120%;
+}
+#textArea .font_sizer_content a.font_size_selected {
+	background-color:#3789b9;
+	color:#fff;
+	cursor:default;
+}
+
+#textArea .fontSizeTwo, #textArea .article_rdr #textArea .fontSizeTwo  ol li {
+	font-size:120%;
+}
+#textArea .fontSizeTwo, #textArea .fontSizeTwo div, #textArea .fontSizeTwo h2 {
+	line-height:130%;
+}
+#textArea .fontSizeThree, #textArea .article_rdr .fontSizeThree ol li {
+	font-size:130%;
+}
+#textArea .fontSizeThree, #textArea .fontSizeThree div, #textArea .fontSizeThree h2 {
+	line-height:140%;
+}
+

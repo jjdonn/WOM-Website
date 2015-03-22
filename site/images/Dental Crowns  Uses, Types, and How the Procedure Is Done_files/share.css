@@ -1,0 +1,265 @@
+#textArea .share_bar {
+	float:right;
+	margin: 0 0 0 10px;
+	line-height:16px;
+	font-size:100%;
+    text-align:left;
+    width:71px;
+}
+#textArea .share_bar * {
+	line-height:16px;
+}
+#textArea .share_content {
+	border-right: 1px solid #e7e7e7;
+	border-left: 1px solid #e7e7e7;
+	padding: 0 4px 0 8px;
+	margin:0;
+	width: 56px;
+	overflow:hidden;
+	background: url(http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/other/share_bar.png) no-repeat center bottom;
+}
+#textArea .share_content a {
+	display:block;
+	text-decoration:none;
+	float:left;
+	margin: 0 6px 0 0;
+	padding:0;
+	cursor:pointer;
+}
+#textArea .share_content p {
+	font-size:80%;
+	margin: 0 0 3px 0;
+	padding: 0;
+}
+#textArea .share_content a.fb_share {
+	width:15px;
+	height:17px;
+	background: url(http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/other/share_bar.png) no-repeat 0 0;
+	margin: 2px 8px 0 1px;
+}
+#textArea .share_content a.tw_share {
+	width:15px;
+	height:17px;
+	background: url(http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/other/share_bar.png) no-repeat -15px 0;
+}
+#textArea .share_bottom,#textArea .share_top {
+	width:70px;
+	background: url(http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/other/share_bar.png) no-repeat 0 -18px;
+	height:5px;
+	overflow:hidden;
+}
+#textArea .share_bottom {
+	clear:both;
+	float:none;
+	background-position:0 -23px;
+	height:6px;
+}
+#textArea .share_bottom,#textArea .share_top {
+	display:block;
+}
+
+/* Slide */
+
+.share_bar {
+	text-align:right;
+	margin: 0 0 0 874px;
+	padding:0px 0 3px 0;
+	width:100px;
+	clear:both;
+	float:none;
+}
+
+.ua_type_tablet .share_bar, .ua_type_mobile .share_bar {
+	width:125px;
+	margin: 0 0 0 855px;
+}
+
+
+.edtrDisclaimer_fmt {
+	position:relative;
+}
+.share_bar_funded {
+	float:right;
+	margin-top:-23px;
+	width:100px;
+	z-index:99;
+	position:relative;
+}
+
+.share_content {
+	overflow:hidden;
+	margin-top: 10px;
+}
+.share_content a {
+	display:block;
+	text-decoration:none;
+	float:left;
+	margin: 0 6px 0 0;
+	padding:0;
+	cursor:pointer;
+}
+.share_content p {
+	font-size:80%;
+	margin: 0 0 3px 0;
+	padding: 2px 6px 0 0;
+	float:left;
+	color: #666;
+}
+.share_content a.fb_share {
+	width:15px;
+	height: 15px;
+	background: url(http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/other/share_bar.png) no-repeat 0 0;
+	margin-top: 2px;
+}
+.share_content a.tw_share {
+	width:15px;
+	height:17px;
+	background: url(http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/other/share_bar.png) no-repeat -15px 0;
+}
+.share_bottom,.share_top {
+	display:none;
+}
+#textArea .quiz_questions {
+	padding-top:10px;
+}
+
+.biography_fmt h2 {
+	margin-bottom:20px;
+}
+#textArea .clearing-div {
+	display:none;
+}
+.article_rdr h3 {
+	clear:left;
+    margin-bottom:20px
+}
+
+/* Older Slideshow styles */
+.biography_fmt h2.no-image {
+ 	width:395px;
+}
+.tb_main .share_bar {
+	clear:none;
+	float:right;
+	margin:10px 0 0 0;
+	width:102px;
+}
+#mainContent_ThirdCol_ctr .titlebar .tb_main h1 {
+	float:left;
+}
+#mainContent_ThirdCol_ctr .titlebar {
+	padding-bottom:5px;
+}
+#mainContent_ThirdCol_ctr .ed_disclaimer {
+	margin-top:-5px;
+}
+.slide_show_wide {
+	clear:none;
+	float:right;
+	margin:11px 5px 0 0;
+	padding:0 0 3px;
+	text-align:right;
+	width:100px;
+}
+
+/* Sponored Slideshow styles */
+.slideshowTitleBar_rdr .share_bar {
+	clear:none;
+	float:right;
+	margin:5px 0 -4px 0;
+	width:102px;
+}
+.slideshowTitleBar_rdr h2.sponsored_title {
+	padding:0px 5px 0 0;
+}
+
+/* Topic TV Styles */
+.share_topic {
+	clear:both;
+	float:right;
+	margin:2px -7px 0 0;
+	padding:0 0 3px 6px;
+	text-align:right;
+	width:100px;
+}
+.share_topic p {
+    font-size:77%;
+}
+
+/* Video Popup styles */
+.share_bar_popup_video {
+	clear:both;
+	float:right;
+	margin:0;
+	position:relative;
+	top:3px;
+	width:100px;
+	padding-bottom:0;
+}
+.share_bar_popup_video p {
+	width:52px;
+
+}
+
+.html5 .header_fmt .share_bar_popup_video p {
+	color: #666;
+	float: left;
+	font-size: 75%;
+	margin: 0px 0px 3px;
+	padding: 2px 8px 0px 0px !important;
+	width: 50px;
+}
+/* Quiz Styles */
+.quiz_subheader .share_bar {
+	margin: 3px 0 0 0;
+}
+.quiz_subheader .share_content p {
+	color:#666;
+}
+
+/*
+** Healthy Living / Patient Solution (TOC module)
+*/
+#hls_share.share_bar {
+	margin: 20px 0;
+	padding: 0;
+	position: relative;
+	text-align: left;
+	width: 300px;
+}
+#hls_share.share_bar .share_top,
+#hls_share.share_bar .share_bottom {
+	display: none;
+}
+#hls_share.share_bar p {
+	color: #515151;
+	float: none;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 32px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	z-index: 1;
+}
+#hls_share.share_bar a.fb_share,
+#hls_share.share_bar a.tw_share {
+	background-image: url("http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/modules/share_icons_32x32.png");
+	background-repeat: no-repeat;
+	display: block;
+	float: none;
+	height: 32px;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	width: 32px;
+	z-index: 2;
+}
+#hls_share.share_bar a.fb_share {
+	background-position: -32px 0;
+	left: 175px;
+}
+#hls_share.share_bar a.tw_share {
+	background-position: 0 0;
+	left: 130px;
+}
