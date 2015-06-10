@@ -59,10 +59,11 @@
 		$to = $_POST["owner_email"];
 		$subject = 'A message from your site visitor ' . $_POST["name"];
 		$headers = array (
-		'From' => $_POST["email"] ,
+		'From' => 'contact@drdonndds.com' ,
 		'To' => $to,
+		'reply_to' => $_POST["email"],
 		'Subject' => $subject);
-		
+				
 		$smtp = Mail::factory(
 					'smtp',
 					array (
