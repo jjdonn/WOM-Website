@@ -7,7 +7,7 @@ require('./wp-blog-header.php');
 
     <html lang="en">
     <head>
-    <title> our news</title>
+    <title>Dental Implants I Colorado Springs Dentist I 80906</title>
     <meta charset="utf-8">
     <meta name = "format-detection" content = "telephone=no" />
     <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
@@ -53,6 +53,7 @@ require('./wp-blog-header.php');
                            <ul class="sf-menu">
                     			<li ><a href="../../index.html">Home</a> </li>
                                 <li><a href="../../index-1.html">Services </a></li>
+                                <li class="current"><a href="index-2-wp.php">News & Reviews</a></li>
                                 <li><a href="../../index-4.html">Contact Us</a></li>
                             </ul>
                         </nav>
