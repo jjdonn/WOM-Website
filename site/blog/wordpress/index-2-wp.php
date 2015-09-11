@@ -47,8 +47,8 @@ require('./wp-blog-header.php');
             <div class="row">
                 <div class="grid_12">
                     <div class="inside clearfix">
-                        <h1><a href="index.html">
-						<img src="../../images/WOM 2 logo.gif" alt="HappyDent"></a></h1>
+                        <h1>
+						<img src="../../images/WOM 2 logo.gif" alt=""></h1>
                         <nav>
                            <ul class="sf-menu">
                     			<li ><a href="../../index.html">Home</a> </li>
