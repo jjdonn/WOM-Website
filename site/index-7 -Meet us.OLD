@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
     <html lang="en">
     <head>
-    <title>Dental Implants I Colorado Springs Dentist I 80906</title>
+    <title>privacy policy</title>
     <meta charset="utf-8">
     <meta name = "format-detection" content = "telephone=no" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -13,6 +13,9 @@
 	
 	background-image: url(images/bg-4.gif);
 	background-repeat: no-repeat;
+}
+    .auto-style1 {
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
     </style>
     <script src="js/jquery.js"></script>
@@ -72,8 +75,8 @@
         <div class="row">
         	 <center>                                          
              <div class="grid_12">
-                 <h2>Meet the Staff</h2> 
-                  <img src="images/dental family.png" width="474" height="315" class="img-ind-1 w1 img-top"/> 
+                 <h2 class="auto-style1">Meet the Staff</h2> 
+                  <img src="images/IMG_0473.JPG" width="474" height="315"/> 
                  <br>        	
             </div>
           	</center>
@@ -89,35 +92,49 @@
 	        </div>
 	        <br>
 			<div class="grid_6">
-	            <img src="images/nata.jpg" width="180" height="270" alt="" class="img-ind-1 w1 img-top">
-	            <h3>Dena, Front Office Manager</h3>
-	            <div>Dena's ideal date would include a night with Bon Jovi, the Broncos, her two sons and her husband... in that order.  </div>
+	            <img src="images/IMG_0497.JPG" width="405" height="270" alt="" class="img-ind-1 w1 img-top" style="left: 0px; top: 0px">
+	            <h3>Dena, "Jack of all Trades"-Front Office Manager</h3>
+	            <div>Dena's ideal date would include a night with Bon Jovi, the Broncos, her son, daughter and her husband... in that order.  </div>
 	        </div>
 	        <br>
 			<div class="grid_6">
-	            <img src="images/nicole.jpg" width="180" height="270" alt="" class="img-ind-1 w1 img-top">
-	            <h3>Nicole, Assistant</h3>
-	            <div>Nicole is aspiring to be Kim Kardashian, and has applied to be on The Bachelor 5 times.  </div>
+	            <img src="images/IMG_0495.JPG" width="405" height="270" alt="" class="img-ind-1 w1 img-top" style="left: 0px; top: 0px">
+	            <h3>Nicole, Master Assistant</h3>
+	            <div>Nicole is aspiring to be a world class leg wrestler, and has applied to be on The Bachelor 5 times.  </div>
 	        </div>
 	        <br>
 			<div class="grid_6">
-	            <img src="images/nata.jpg" width="180" height="270" alt="" class="img-ind-1 w1 img-top">
-	            <h3>Nata, Hygienest</h3>
+	            <img src="images/IMG_0480.JPG" width="405" height="270" alt="" class="img-ind-1 w1 img-top" style="left: 0px; top: 0px">
+	            <h3>Nata, Master Hygienest</h3>
 	            <div>Nata recently broke her arm trying to change a light bulb while balancing on a Pringles can.  </div>
 	        </div>
 	        <br>
-			<div class="grid_6">
-	            <img src="images/nicole.jpg" width="180" height="270" alt="" class="img-ind-1 w1 img-top">
-	            <h3>Amber, Hygienist</h3>
-	            <div>Nicole is aspiring to be Kim Kardashian, and has applied to be on The Bachelor 5 times.  </div>
-	        </div>
+	        <br>
 	        <br>
 			<div class="grid_6">
-	            <img src="images/nicole.jpg" width="180" height="270" alt="" class="img-ind-1 w1 img-top">
-	            <h3>Cindy, Hygienist</h3>
-	            <div>Nicole is aspiring to be Kim Kardashian, and has applied to be on The Bachelor 5 times.  </div>
+	            <img src="images/IMG_0484.JPG" width="405" height="270" alt="" class="img-ind-1 w1 img-top" style="left: 0px; top: 0px">
+	            <h3>Mary, Master Hygienist</h3>
+	            <div>Mary is a championship cross trainer that hikes Pikes Peak every morning at 4am to watch the sunrise. She has been on survivor 3 times and has been referred to as "A force to be reconded with." She loves helping her patients smile, knowing that their teeth are clean as a wistle. .  </div>
 	        </div>
-	        <br>         
+	        <br>
+	        <br>
+	        <br>
+			<div class="grid_6">
+	            <br>
+	            <br>
+	            <img src="images/McNeese_Cynthia_1527.jpg" width="225" height="270" alt="" class="img-ind-1 w1 img-top" style="left: 0px; top: 0px">
+	            <h3>Cindy, Master Hygienist</h3>
+	            <div>Cindy is a consouler to the Dali Lama in matters of world piece.  She makes fine cheeses and yogurts in her spare time.  Cindy likes to "keep it clean!"  </div>
+	        </div>
+	        <br>
+	        <br>
+	        <br> 
+	        <div class="grid_6">
+	            <img src="images/IMG_0485.JPG" width="405" height="270" alt="" class="img-ind-1 w1 img-top" style="left: 0px; top: 0px">
+	            <h3>Amber, Front office</h3>
+	            <div>Amber is our resident race car driver.  She has made guest apperances on the movie "Fast and Furious".  She loves to buzz around the office and is so much fun to have around. " </div>
+	        </div>
+        
 			 
          </div> 
           
