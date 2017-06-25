@@ -372,7 +372,7 @@ h1 {
   background: #f8fcff url(../images/bg-5.jpg) left center no-repeat;
 }
 .h-top .inside {
-  background: #ffffff;
+  background-color: transparent;
   padding-top: 22px;
   padding-bottom: 19px;
   -webkit-border-radius: 20px;
