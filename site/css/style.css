@@ -620,9 +620,9 @@ h1 {
 footer {
   font-size: 14px;
   line-height: 20px;
-  color: #d2d2d2;
-  padding-top: 57px;
-  padding-bottom: 40px;
+  background: #F6F1F0;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .copyright {
   font-family: 'Open Sans Condensed', sans-serif;
