@@ -1,10 +1,10 @@
 ﻿<?php
 
 	//SMTP server settings	
-	$host = "mail.drdonndds.com";
+	$host = "mail2.drdonndds.com";
     $port = "587";
     $username = "contact@drdonndds.com";
-    $password = "sumboarder";
+    $password = "Snow007!";
 	
 	
 	$messageBody = "";
