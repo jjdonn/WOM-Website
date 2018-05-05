@@ -54,7 +54,7 @@
 			echo $e->getMessage() ."\n";
 		}
 	}else{	
-		require_once 'Mail.php';
+		require_once("C:\Program Files (x86)\Plesk\Additional\PleskPHP5\PEAR\Mail.php'") ;
 
 		$to = $_POST["owner_email"];
 		$subject = 'A message from your site visitor ' . $_POST["name"];
