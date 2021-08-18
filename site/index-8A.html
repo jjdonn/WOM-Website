@@ -87,8 +87,7 @@
 
         body {
         margin: 0px;
-        background-color: white;
-        background: #fafafa;
+        background: white;
         }
 
         .cards {
@@ -111,7 +110,7 @@
 
         .card__image {
             width: 100%;
-            height: 150px;
+            height: 250px;
             object-fit: cover;
             display: block;
             border-top: 2px solid #333333;
@@ -123,7 +122,7 @@
             line-height: 1.5;
             font-size: 0.9em;
             padding: 15px;
-            background: #fafafa;
+            background: wheat;
             border-right: 2px solid #333333;
             border-left: 2px solid #333333;
             border-bottom: 2px solid #333333;
@@ -164,17 +163,27 @@
             text-decoration: underline;
         }
 
-        .grid_header {
+        .card_header {
             margin: 0 auto;
             max-width: 1000px;
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(490px, 1fr));
             grid-auto-rows: auto;
             gap: 20px;
             font-family: sans-serif;
-            padding-top: 150px;
             
         }
+        .a{
+            margin-left: 75px;
+            display: block;
+          
+        }
+        .b{
+            margin-left: 75px;
+            display: block;
+            vertical-align: middle;
+        }
+        
 
     </style> 
     <!--     end: card css style sheet   -->
@@ -271,7 +280,7 @@
         </div>    
     </header>
 
-    <section class="content main-bot">
+     <!-- <section class="content main-bot">
       <section class="container">
         
         <div class="row">
@@ -300,15 +309,32 @@
         </div>
 
         </section>
-    </section>
+    </section> -->
              
     <!--=======content================================-->
     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <div class="card_header">
+        <div class="a">
+            <div class="map_wrapper">
+                <dl class="address">
+                    <dt>WORD OF MOUTH FAMILY DENTISTRY<br>BROADMOOR OFFICE <br> 202 E. Cheyenne Mountain Blvd <br>
+                    Suite E<br>
+                    Colorado Springs, CO 80906</dt>
+                    <a href="tel:7195766551" class="btn">Phone: (719) 576-6551</a>
+                </dl>  
+            </div>
+        </div>
+        <div class="b">
+            <h2>Your Broadmoor Team</h2>
+            <img src="images-8-2021/BroadmoorTeam.jpg" alt="" class="img-ind" />
+        </div>
+
+    </div>
     <div class="cards">
 
         <div class="card">
-            <img class="card__image" src="images-8-2021/doc_donn.jpg" alt="">
+            <img class="card__image" src="images-8-2021/doc_donn.jpg" alt="" >
             <div class="card__content">
               <p>
                 <h1>Doc Donn, Dentist</h1>
@@ -319,7 +345,7 @@
     
 
       <div class="card">
-        <img class="card__image" src="images-8-2021/teresa.jpg" alt="">
+        <img class="card__image" src="images-8-2021/teresa.jpg" alt="" class="">
         <div class="card__content">
           <p>
             <h1>Teresa, Office Manager</h1>
