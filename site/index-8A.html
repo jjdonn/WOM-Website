@@ -173,15 +173,28 @@
             font-family: sans-serif;
             
         }
-        .a{
-            margin-left: 75px;
+
+        .left{
+            
             display: block;
-          
+            margin: auto;
         }
-        .b{
-            margin-left: 75px;
+        .right{
+            margin:auto;
             display: block;
-            vertical-align: middle;
+            
+            
+        }
+        .right.p {
+            margin:auto;
+        }
+        *.btn {
+            -webkit-appearance: button;
+            -moz-appearance: button;
+            appearance: button;
+            font-size: 25px;
+            text-decoration: none;
+            color: wheat;
         }
         
 
@@ -315,19 +328,25 @@
     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <div class="card_header">
-        <div class="a">
-            <div class="map_wrapper">
+        <div class="left">
+            <div class="map map_wrapper">
                 <dl class="address">
                     <dt>WORD OF MOUTH FAMILY DENTISTRY<br>BROADMOOR OFFICE <br> 202 E. Cheyenne Mountain Blvd <br>
                     Suite E<br>
-                    Colorado Springs, CO 80906</dt>
-                    <a href="tel:7195766551" class="btn">Phone: (719) 576-6551</a>
-                </dl>  
+                    Colorado Springs, CO 80906
+                    </dt>
+                    
+                </dl> 
+                <p>
+                    <a href="tel:7195766551" class= "btn">CALL US AT 719-576-6551</a>
+                </p>
             </div>
         </div>
-        <div class="b">
-            <h2>Your Broadmoor Team</h2>
-            <img src="images-8-2021/BroadmoorTeam.jpg" alt=""  />
+        <div class="right">
+            <p>
+                <h2>Your Broadmoor Team</h2>
+                <img src="images-8-2021/BroadmoorTeam.jpg" alt=""  />
+            </p>
         </div>
 
     </div>
