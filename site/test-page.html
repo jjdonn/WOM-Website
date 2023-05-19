@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+
+
+<!--========/ google review embed ===============-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/js/google-places.js "></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=[(API_KEY)]"></script>
+    
+
+    
+        <script type="text/javascript">
+        jQuery(document).ready(function() {
+        $("#google-reviews").googlePlaces({
+        placeId: '[PLACES_ID]',
+        render: ['reviews'],
+        min_rating: 5,
+        max_rows: 0
+        });
+        });
+        </script>
+        
+    <!--========/ google review embed ===============-->
+</head>
+<body>
+    <div class="elfsight-app-9f59f232-61ce-465d-8b5a-28191c9f0c9e"></div>
+<div id="google-reviews"></div>
+</body>
+</html>
